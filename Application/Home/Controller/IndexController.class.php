@@ -39,7 +39,7 @@ class IndexController extends HomeBaseController{
      */
     public function logout(){
         session('user',null);
-        $this->success('退出成功、前往登录页面',U('Home/Index/index'));
+        $this->success('退出成功、前往登录页面',U('Admin/Login/index'));
     }
 
     /**
