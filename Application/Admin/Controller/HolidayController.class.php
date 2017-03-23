@@ -58,4 +58,14 @@ class HolidayController extends AdminBaseController{
             $this->display();
         }
     }
+    
+    
+    public function send(){
+         $data=D('Users')->getTreeData();
+        $assign=array(
+            'data'=>$data
+            );
+        $this->assign($assign);
+        $this->display();
+    }
 }
